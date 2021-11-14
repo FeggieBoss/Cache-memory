@@ -14,7 +14,6 @@ void $main() {
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
     $main();
     return 0;
 }

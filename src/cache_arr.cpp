@@ -81,8 +81,8 @@ void cache_arr::lru_write(size_t double_id, double v) {
 }
 
 void cache_arr::print_log() {
-    std::cout << "количество кэш-промахов: " << cache_misses_ct << '\n';
-    std::cout << "% промахов: " << std::fixed << std::setprecision(1) << (double)cache_misses_ct * 100 / access_ct << "%" << '\n';
+    std::cout << "number of misses: " << cache_misses_ct << '\n';
+    std::cout << "percentage of misses: " << std::fixed << std::setprecision(1) << (double)cache_misses_ct * 100 / access_ct << "%" << '\n';
 }
 
 cache_arr::cache_arr(element* arr_) {
